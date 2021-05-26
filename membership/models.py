@@ -16,9 +16,13 @@ class Discharge(models.Model):
     material = models.CharField(max_length=10)
     machine_id = models.IntegerField()
     who = models.ForeignKey(Member, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.material
     
 class Rank(models.Model):
     who = models.ForeignKey(Member, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.who
     
 
 
