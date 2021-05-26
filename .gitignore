@@ -1,6 +1,1 @@
-airsm_restapi/__pycache__/*
-membership/__pycache__/*
-airsm_restapi/__pycache__/*
-membership/__pycache__/*
-membership/migrations/__pycache__/*
-
+*.pyc

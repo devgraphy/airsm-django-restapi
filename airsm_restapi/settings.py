@@ -37,9 +37,9 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000/',
-)
+CORS_ORIGIN_WHITELIST = [
+    'https://localhost:3000',
+]
 
 ROOT_URLCONF = 'airsm_restapi.urls'
 
