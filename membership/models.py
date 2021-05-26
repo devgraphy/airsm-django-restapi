@@ -6,7 +6,7 @@ class Member(models.Model):
     phone = models.CharField(max_length=11)
     name = models.CharField(max_length=30)
     points = models.IntegerField()
-    password = models.CharField(max_length=30, default="")
+    password = models.CharField(max_length=30, null=True )
     def __str__(self):
         return self.name
 
@@ -19,11 +19,7 @@ class Discharge(models.Model):
     def __str__(self):
         return self.material
     
-class Rank(models.Model):
-    who = models.ForeignKey(Member, on_delete=models.CASCADE)
-    def __str__(self):
-        return self.who
-    
-
-
-
+# class Rank(models.Model):
+#     who = models.ForeignKey(Member, on_delete=models.CASCADE)
+#     def __str__(self):
+#         return self.who.name

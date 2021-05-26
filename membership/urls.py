@@ -1,7 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import userList, getUser
+from .views import helloAPI, userList, getUser, getRank
+
+# 순서 규칙
 urlpatterns = [
+    path('rank/',getRank),
+    path('hello/',helloAPI),
     path('users/',userList),
-    path('<str:id>/',getUser)
+    path('<str:id>/',getUser),
 ]
