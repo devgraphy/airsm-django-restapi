@@ -20,6 +20,6 @@ def userList(request):
 
 @api_view(['GET'])
 def getUser(request, id):
-    userInfo = Member.objects.get(phone = id)
+    userInfo = Member.objects.get(phone=id)
     serializer = MemberSerializer(userInfo)
     return Response(serializer.data)
