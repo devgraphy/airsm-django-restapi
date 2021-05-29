@@ -24,7 +24,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'membership',
     'corsheaders',
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -37,8 +39,20 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'https://localhost:3000',
+CORS_ALLOWED_ORIGINS =[
+    "https://localhost:3000",
+    "https://localhost:6775",
+    "http://localhost:6775",
+    "http://localhost:8081",
+
+]
+
+CORS_ALLOW_METHODS=[
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'POST',
+    'PUT',
 ]
 
 ROOT_URLCONF = 'airsm_restapi.urls'

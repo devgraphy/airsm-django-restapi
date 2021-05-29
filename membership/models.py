@@ -5,7 +5,7 @@ from django.db import models
 class Member(models.Model):
     phone = models.CharField(max_length=11)
     name = models.CharField(max_length=30)
-    points = models.IntegerField()
+    points = models.IntegerField(default=0)
     password = models.CharField(max_length=30, null=True )
     def __str__(self):
         return self.name

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from rest_framework.parsers import JSONParser
 from .models import Member, Discharge
 from .serializers import MemberSerializer, DischargeSerializer
 # Create your views here.
@@ -15,7 +16,7 @@ def helloAPI(request):
 @api_view(['GET'])
 def userList(request):
     users = Member.objects.all()
-    serializer =MemberSerializer(users, many=True)
+    serializer = MemberSerializer(users, many=True)
     return Response(serializer.data)
 
 # 개인별 사용자 정보 제공 API - 사용자 포인트 정보 화면에 필요
@@ -31,4 +32,17 @@ def getRank(request):
     serializer = MemberSerializer(rank, many=True)
     return Response(serializer.data)
 
+<<<<<<< HEAD
 
+=======
+@api_view(['POST'])
+def memberCreate(request):
+    print(request.data)
+    serializer = MemberSerializer(data = request.data)
+    if(serializer.is_valid()):
+        print("Hi")
+        serializer.save()
+        return Response(serializer.data,status=200)
+    return Response("member create error",status=400)
+   
+>>>>>>> 555ba333813b178548eb462e9bf32e77677eb225
