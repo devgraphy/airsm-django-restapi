@@ -24,7 +24,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'membership',
     'corsheaders',
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
