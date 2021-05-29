@@ -30,3 +30,5 @@ def getRank(request):
     rank = Member.objects.order_by('-points')
     serializer = MemberSerializer(rank, many=True)
     return Response(serializer.data)
+
+
