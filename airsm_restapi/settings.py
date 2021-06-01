@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'membership',
     'corsheaders',
-
+    'django.contrib.sites',
 ]
 
 
@@ -40,10 +40,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS =[
-    "https://localhost:3000",
-    "https://localhost:6775",
-    "http://localhost:6775",
     "http://localhost:8081",
+    "http://localhost:8082",
+
 
 ]
 
