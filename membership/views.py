@@ -73,14 +73,13 @@ def point(request):
     print(request)
     try:
         obj = Member.objects.get(phone=p)
-        obj.points+=num
-        obj.save()
+
     except ObjectDoesNotExist:
         serializer = MemberSerializer(data = request.data)
         if(serializer.is_valid()):
             serializer.save()
         obj = Member.objects.get(phone=p)
-        obj.points+=num
-        obj.save()
+    obj.points+=num
+    obj.save()
     return Response(num, status=200)
         
