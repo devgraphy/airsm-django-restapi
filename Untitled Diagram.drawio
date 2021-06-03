@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-03T11:10:36.250Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37" etag="X3iqRjz9oslF25Exdgh8" version="14.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-03T11:34:37.700Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37" etag="99gPFJlfjUhYFhv7sC55" version="14.7.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="984" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -92,9 +92,6 @@
         <mxCell id="MgjCvjXY0JyHCziUCUVd-25" value="실패" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="510" y="240" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="MgjCvjXY0JyHCziUCUVd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="MgjCvjXY0JyHCziUCUVd-26" target="MgjCvjXY0JyHCziUCUVd-38">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="MgjCvjXY0JyHCziUCUVd-26" value="포인트 조회 및&lt;br&gt;랭킹 조회" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="320" width="120" height="40" as="geometry" />
         </mxCell>
@@ -128,7 +125,7 @@
             <mxPoint x="540" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MgjCvjXY0JyHCziUCUVd-34" value="기기 위치 확인&lt;br&gt;실시간 수거 현황 확인" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="MgjCvjXY0JyHCziUCUVd-34" value="기기 위치 및&lt;br&gt;실시간 컵 수거 현황 확인" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="640" y="80" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="MgjCvjXY0JyHCziUCUVd-36" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="MgjCvjXY0JyHCziUCUVd-17" target="MgjCvjXY0JyHCziUCUVd-34">
@@ -151,6 +148,9 @@
         </mxCell>
         <mxCell id="MgjCvjXY0JyHCziUCUVd-43" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; font-style: normal ; font-weight: 700 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;모니터링 플로우 차트&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="625" y="40" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MgjCvjXY0JyHCziUCUVd-45" value="성공" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="460" y="290" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
