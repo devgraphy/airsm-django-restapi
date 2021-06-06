@@ -4,7 +4,7 @@ from .models import Member, Discharge
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = ['phone','name', 'points', 'password']
+        fields = ['phone','name', 'password', 'email']
 
 class DischargeSerializer(serializers.ModelSerializer):
     class Meta:

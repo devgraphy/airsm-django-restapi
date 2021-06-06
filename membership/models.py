@@ -7,7 +7,7 @@ class Member(models.Model):
     name = models.CharField(max_length=30, null=True)
     email = models.EmailField(null=True)
     points = models.IntegerField(default=0)
-    password = models.CharField(max_length=30,null=True)
+    password = models.CharField(max_length=30,null=False,default="")
     def __str__(self):
         return self.phone
 

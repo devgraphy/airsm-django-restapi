@@ -39,13 +39,24 @@ def getRank(request):
 @api_view(['POST'])
 def memberCreate(request):
     print(request.data)
-    serializer = MemberSerializer(data = request.data)
-    if(serializer.is_valid()):
-        print("Hi")
-        serializer.save()
-        return Response(serializer.data,status=200)
-    print(serializer.errors)
-    return Response("member create error",status=400)
+    p = request.data.get('phone')
+    try:                        # 계정이 존재하면
+        obj = Member.objects.get(phone=p)
+    except ObjectDoesNotExist:  # 계정이 존재하지 않으면
+        serializer = MemberSerializer(data=request.data)
+        if(serializer.is_valid()):
+            serializer.save()
+            return Response("회원가입에 성공하였습니다.",status=200)
+        else:
+            return Response("올바르지 않은 데이터입니다.",status=400)
+
+    if(len(obj.password) > 1):
+            return Response("이미 가입한 계정입니다.", status=400)
+    else:
+        obj.password = request.data.get('password')
+        obj.name = request.data.get('name')
+        obj.save()
+        return Response("회원가입에 성공하였습니다.",status=200)    
 
 # 로그인
 @api_view(['POST'])
