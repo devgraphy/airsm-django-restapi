@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'airsm',
         'USER': 'root',
         'PASSWORD': 'mariadb',
-        'HOST': '13.208.94.244',
+        'HOST': '3.37.7.183',
         'PORT': '3306',
     }
 }
